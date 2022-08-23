@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    /* scroll beahavoiur smooth, hace que vaya suave el scroll cuando elegis un item de la nav */
+    scroll-behavior: smooth;
+}
+
+h1 {    font-size: 10vw;}
+h2{    font-size: 2.7em;}
+h3 {    font-size: 2em;}
+p {    font-size: 1.25em;}
+ul{    list-style: none;}
+li{ font-size: 1.25em;}
+
+body{ 
+       margin: 0;
+       font-family: sans-serif;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.5);
+    color: white;
+    background-color: blueviolet;    
+}
+
+button:hover{
+    background-color: rgb(59, 18, 97);    
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.colorspan{color: blueviolet;}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{ 
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 6vw;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    padding: 5px ;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/h1.jpg);   
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#reposorio{
+
+}
+
+#reposorio .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#nuestrosproductos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestrosproductos .container{
+    padding: 100px 25px;
+   ;
+}
+
+#nuestrosproductos p {
+    display: none;
+}
+
+
+#nuestrosproductos .carta{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 15px;
+    height: 200px;
+    
+    
+  }
+
+/* first child (cuando son hermanos como en el ejemplo de la carta (hay 3 cartas juntos, podes darles indicaciones 
+a c/u diferentes, poniendole first child (primer hijo seria primero que aparece, y desps utiliza nth child y entre
+parentesis el numero de hijo.. ver ejemplo ).. */
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/h1.jpg); 
+    
+    /* background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; */
+}
+
+/* 2do hijo */
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/casa.jpg); 
+    /* background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+ */
+}
+
+/* 3er hijo */
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/ART.jpg); 
+    /* background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; */
+}
+
+#caracteristicas .container{
+    text-align: center;
+}
+
+#caracteristicas li{
+    padding: 8px;
+    font-weight: bold;
+}
+
+#informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(35, 35 , 35);
+    color: white;
+    height: 70vh;
+    margin-bottom: 30px;
+}
+
+#informacion h2{
+    font-size: 9vw;
+}
+/* font size vw (tamaño relativo, se ajusta al ancho de la pantalla */
+
+#informacion button{
+    font-size:7vw;
+}
+
+footer{
+    
+    background-color: rgb(230, 230, 230);
+    
+    
+}
+
+footer p{
+    margin: 0;
+    padding: 20px;
+    color: blueviolet;
+}
+
+footer .container{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   
+}
+
+
